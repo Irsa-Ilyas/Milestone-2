@@ -1,27 +1,175 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+/* navber */
+.nav {
+  margin: auto;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  height: 90px;
+}
+ul {
+  display: flex;
+  align-items: center;
+}
+span {
+  font-size: 32px;
+}
+.logo {
+  font-size: 18px;
+  font-weight: bold;
+}
+ul li {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 21px;
+  list-style-type: none;
+}
+.link {
+  text-decoration: none;
+  color: black;
+}
+/* hero section */
+.input {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: white;
+  margin: auto;
+  height: 140px;
+  margin-top: 500px;
+  box-shadow: 2px 2px 3px grey;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.inputdiv input[type="text"] {
+  height: 50px;
+  margin: 6px;
+  padding-left: 12px;
+  border: 1px solid #e6e6e6;
 }
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.inputdiv input[type="button"] {
+  background-color: #708c5b;
+  padding: 18px 45px;
+  color: white;
+  letter-spacing: 2px;
+  border: none;
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.hamburger ul {
+  display: none;
+}
+/* cards */
+.card1,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6 {
+  line-height: 23px;
+}
+.card1 p,
+.card2 p,
+.card3 p,
+.card4 p,
+.card5 p,
+.card6 p {
+  width: 369px;
+  line-height: 23px;
+  padding-bottom: 20px;
+}
+.cards,
+.cardsrow {
+  margin-top: 30px;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.para2 {
+  border-bottom: 1px solid black;
+  color: #565656;
+}
+/* footer */
+.footer {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  border-top: 1px solid #abb8c3;
+  letter-spacing: 2px;
+}
+.map {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  color: black;
+  padding: 0px 0px 123px;
+}
+.aboutcards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+}
+.img1,
+.img2,
+.img3,
+.img4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+.contact {
+  width: 40%;
+  margin: auto;
+}
+.contactpage {
+  width: 100%;
+  height: 500px;
+}
+.contact input {
+  margin-left: 20px;
+  margin-bottom: 30px;
+  width: 40%;
+  height: 50px;
+}
+textarea {
+  margin-left: 20px;
+  width: 530px;
+}
+.contact input::placeholder {
+  padding-left: 20px;
+  color: black;
+}
+.contact textarea::placeholder {
+  padding-left: 20px;
+  padding-top: 5px;
+  color: black;
+}
+.btn input[type="button"] {
+  padding: 14px 45px;
+  background-color: #708c5b;
+  border: none;
+}
+.input2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input2 input[type="button"] {
+  align-items: center;
 }
